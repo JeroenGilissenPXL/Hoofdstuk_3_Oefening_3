@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="submit.html" method="post">
+    <fieldset>
+        <legend>Registration Details</legend>
+        <div class="row">
+            <label for="university">University : </label>
+            <input type="text" name="university" id="university" required>
+
+        </div>
+        <div class="row">
+            <label for="institute">Institute : </label>
+            <input type="text" name="institute" id="institute" required>
+        </div>
+
+        <div class="row">
+            <label for="degree">Degree : </label>
+            <select name="select-degree" id="degree">
+                <option value="Bachelor's degree">Bachelor's degree</option>
+                <option value="Master's degree">Master's degree</option>
+                <option value="Physics degree">Doctor's degree</option>
+                <option value="Associate's degree">Associate's degree</option>
+            </select>
+            <input type="radio" id="persuing" name="degree-status">
+            <label for="persuing">Persuing</label>
+
+            <input type="radio" id="completed" name="degree-status">
+            <label for="completed">Completed</label>
+        </div>
+
+        <div class="row">
+            <label for="cpi">Average CPI : </label>
+            <input type="number" id="cpi" name="cpi">
+
+            <label for="semester">Upto </label>
+            <input type="number" id="semester" name="semester">
+            <label>Th Semester</label>
+        </div>
+
+        <div class="row">
+            <label for="experience">Experience : </label>
+            <input type="number" id="experience" name="experience">
+        </div>
+
+        <div class="row">
+            <label for="website">Your Website Or Blog : </label>
+            <input type="url" id="website" name="website">
+        </div>
+
+    </fieldset>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
